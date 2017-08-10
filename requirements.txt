@@ -1,0 +1,6 @@
+gyp==0.1
+meld3==1.0.2
+psycopg2==2.6.1
+pycurl==7.43.0
+supervisor==3.2.0
+virtualenv==15.1.0
