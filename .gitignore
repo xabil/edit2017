@@ -99,3 +99,13 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+
+# Django
+bin/
+db.sqlite3
+include/
+local/
+media/
+pip-selfcheck.json
+static/
