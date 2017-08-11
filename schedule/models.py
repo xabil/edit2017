@@ -10,6 +10,10 @@ class Floor(models.Model):
         unique=True)
     theme = models.CharField(
         max_length=1024)
+    plan = models.ImageField(
+        upload_to='medida/plans/',
+        blank=True,
+        null=True)
 
     def __unicode__(self):
 
@@ -90,6 +94,10 @@ class Point(models.Model):
     name = models.CharField(
         max_length=2048)
     description = RichTextUploadingField()
+    photo = models.ImageField(
+        upload_to='media/points/',
+        blank=True,
+        null=True)
 
     def __unicode__(self):
 
@@ -112,6 +120,8 @@ class Installation(models.Model):
         unique=True)
     publish = models.BooleanField(
         default=True)
+    photo = models.ImageField(
+        upload_to='media/installations/')
 
     def __unicode__(self):
 
@@ -145,6 +155,8 @@ class Event(models.Model):
         blank=True)
     starttime = models.DateTimeField()
     endtime = models.DateTimeField()
+    photo = models.ImageField(
+        upload_to='media/evenets')
     publish = models.BooleanField(
         default=True)
 
